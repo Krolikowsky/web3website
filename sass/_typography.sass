@@ -10,11 +10,23 @@
     color: $black
     padding-bottom: 20px
 
+    &--white
+        color: $white
+
+.headingThree
+    font-size: 2.4rem
+    font-family: "Thic Regular"
+    color: $black
+    padding-bottom: 20px
+
 .paragraph
     font-size: 1.6rem
     line-height: 2.8rem
     color: $black
     font-family: "Thic Regular"
+
+    &--white
+        color: $white
 
 .paragraphStrong
     font-size: 1.8rem
@@ -33,8 +45,23 @@
     padding: $paddingButton
     border-radius: $borderRadiusButton
     margin: 10px 0px
+    position: relative
+    z-index: 100
 
 .whiteButton
+    width: 100%
+    font-size: 1.6rem
+    font-family: "Thic Medium"
+    color: $black
+    background-color: $white
+    border: 1px solid $white
+    padding: $paddingButton
+    border-radius: $borderRadiusButton
+    margin: 10px 0px
+    position: relative
+    z-index: 100
+
+.transparentButton
     width: 100%
     font-size: 1.6rem
     font-family: "Thic Medium"
@@ -44,6 +71,21 @@
     padding: $paddingButton
     border-radius: $borderRadiusButton
     margin: 10px 0px
+    position: relative
+    z-index: 100
+
+.transparentButtonWhiteBorder 
+    width: 100%
+    font-size: 1.6rem
+    font-family: "Thic Medium"
+    color: $white
+    background-color: transparent
+    border: 1px solid $white
+    padding: $paddingButton
+    border-radius: $borderRadiusButton
+    margin: 10px 0px
+    position: relative
+    z-index: 100
 
 @media only screen and (min-width: 700px)
 
@@ -52,6 +94,9 @@
 
     .headingTwo
         font-size: 5.4rem
+
+    .headingThree
+        font-size: 3rem
 
     .paragraph
         font-size: 1.9rem
@@ -62,6 +107,15 @@
     .whiteButton
         width: inherit
 
+    .transparentButtonWhiteBorder 
+        width: inherit
+
+    .transparentButton
+        width: inherit
+
+    .header__firstButton
+        width: inherit
+
 @media only screen and (min-width: 992px)
 
     .headingOne
@@ -69,6 +123,9 @@
 
     .headingTwo
         font-size: 6rem
+
+    .headingThree
+        font-size: 4.5rem
 
     .paragraph
         font-size: 2rem
@@ -81,4 +138,13 @@
         font-size: 2rem
 
     .whiteButton
+        font-size: 2rem
+
+    .transparentButtonWhiteBorder 
+        font-size: 2rem
+
+    .transparentButton
+        font-size: 2rem
+
+    .header__firstButton
         font-size: 2rem

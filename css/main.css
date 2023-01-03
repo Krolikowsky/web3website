@@ -9,6 +9,10 @@
   font-size: 62.5%;
 }
 
+.whiteColor {
+  color: #FFFFFF;
+}
+
 @font-face {
   src: url("/font/THICCCBOI-Regular.woff2") format("woff2");
   font-family: "Thic Regular";
@@ -34,12 +38,25 @@
   color: #111029;
   padding-bottom: 20px;
 }
+.headingTwo--white {
+  color: #FFFFFF;
+}
+
+.headingThree {
+  font-size: 2.4rem;
+  font-family: "Thic Regular";
+  color: #111029;
+  padding-bottom: 20px;
+}
 
 .paragraph {
   font-size: 1.6rem;
   line-height: 2.8rem;
   color: #111029;
   font-family: "Thic Regular";
+}
+.paragraph--white {
+  color: #FFFFFF;
 }
 
 .paragraphStrong {
@@ -60,9 +77,25 @@
   padding: 18px 32px;
   border-radius: 90px;
   margin: 10px 0px;
+  position: relative;
+  z-index: 100;
 }
 
 .whiteButton {
+  width: 100%;
+  font-size: 1.6rem;
+  font-family: "Thic Medium";
+  color: #111029;
+  background-color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  padding: 18px 32px;
+  border-radius: 90px;
+  margin: 10px 0px;
+  position: relative;
+  z-index: 100;
+}
+
+.transparentButton {
   width: 100%;
   font-size: 1.6rem;
   font-family: "Thic Medium";
@@ -72,6 +105,22 @@
   padding: 18px 32px;
   border-radius: 90px;
   margin: 10px 0px;
+  position: relative;
+  z-index: 100;
+}
+
+.transparentButtonWhiteBorder {
+  width: 100%;
+  font-size: 1.6rem;
+  font-family: "Thic Medium";
+  color: #FFFFFF;
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  padding: 18px 32px;
+  border-radius: 90px;
+  margin: 10px 0px;
+  position: relative;
+  z-index: 100;
 }
 
 @media only screen and (min-width: 700px) {
@@ -80,6 +129,9 @@
   }
   .headingTwo {
     font-size: 5.4rem;
+  }
+  .headingThree {
+    font-size: 3rem;
   }
   .paragraph {
     font-size: 1.9rem;
@@ -90,6 +142,15 @@
   .whiteButton {
     width: inherit;
   }
+  .transparentButtonWhiteBorder {
+    width: inherit;
+  }
+  .transparentButton {
+    width: inherit;
+  }
+  .header__firstButton {
+    width: inherit;
+  }
 }
 @media only screen and (min-width: 992px) {
   .headingOne {
@@ -97,6 +158,9 @@
   }
   .headingTwo {
     font-size: 6rem;
+  }
+  .headingThree {
+    font-size: 4.5rem;
   }
   .paragraph {
     font-size: 2rem;
@@ -109,6 +173,15 @@
     font-size: 2rem;
   }
   .whiteButton {
+    font-size: 2rem;
+  }
+  .transparentButtonWhiteBorder {
+    font-size: 2rem;
+  }
+  .transparentButton {
+    font-size: 2rem;
+  }
+  .header__firstButton {
     font-size: 2rem;
   }
 }
@@ -189,6 +262,54 @@
 .columnInformationSection__box {
   margin: 40px 0px;
 }
+.columnInformationSection__box:last-of-type {
+  margin-bottom: 0px;
+}
+
+.cryptoWalletInformation {
+  padding: 95px 15px;
+  background-color: #111029;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+.cryptoWalletInformation__decorationImageLeft {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 0;
+}
+.cryptoWalletInformation__decorationImageRight {
+  position: absolute;
+  bottom: -300px;
+  left: 30px;
+}
+.cryptoWalletInformation__wrapper {
+  width: 100%;
+}
+.cryptoWalletInformation__buttonBox {
+  margin-top: 20px;
+  position: relative;
+  z-index: 100;
+}
+.cryptoWalletInformation__boxInformation {
+  width: 100%;
+  background-color: #FFFFFF;
+  margin-top: 40px;
+  border-radius: 35px;
+  padding: 35px 25px 0px 25px;
+  position: relative;
+  z-index: 100;
+}
+.cryptoWalletInformation__imageWallet {
+  width: 100%;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  border-left: 1px solid #DCDDEB;
+  border-top: 1px solid #DCDDEB;
+  border-right: 1px solid #DCDDEB;
+  margin-top: 20px;
+}
 
 @media only screen and (min-width: 700px) {
   .header {
@@ -257,6 +378,45 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     padding-top: 40px;
+  }
+  .cryptoWalletInformation {
+    padding: 95px 30px;
+  }
+  .cryptoWalletInformation__firstButton {
+    margin-right: 20px;
+  }
+  .cryptoWalletInformation__rightSide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .cryptoWalletInformation__boxInformation {
+    width: 48%;
+    margin-top: 40px;
+  }
+  .cryptoWalletInformation__decorationImageLeft {
+    position: absolute;
+    top: 0px;
+    left: -150px;
+    z-index: 0;
+    width: 1000px;
+    height: 1000px;
+  }
+  .cryptoWalletInformation__decorationImageRight {
+    position: absolute;
+    bottom: -300px;
+    left: 51vw;
+    width: 1000px;
+    height: 1000px;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -341,5 +501,68 @@
   }
   .columnInformationSection__columnsBox {
     padding-top: 40px;
+  }
+  .cryptoWalletInformation {
+    padding: 200px 30px;
+    width: 100%;
+  }
+  .cryptoWalletInformation__wrapper {
+    padding: 200px 30px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 90vw;
+    max-width: 1350px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .cryptoWalletInformation__leftSide {
+    width: 40%;
+  }
+  .cryptoWalletInformation__rightSide {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cryptoWalletInformation__boxInformation {
+    width: 90%;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    padding: 65px 60px 0px 65px;
+  }
+  .cryptoWalletInformation__boxInformation:last-of-type {
+    margin-bottom: 0px;
+  }
+  .cryptoWalletInformation__decorationImageLeft {
+    position: absolute;
+    top: 0px;
+    left: -450px;
+    z-index: 0;
+    width: 1500px;
+    height: 2000px;
+  }
+  .cryptoWalletInformation__decorationImageRight {
+    position: absolute;
+    bottom: -400px;
+    left: 51vw;
+    width: 1000px;
+    height: 2000px;
   }
 }/*# sourceMappingURL=main.css.map */
