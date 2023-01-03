@@ -124,6 +124,40 @@ h1 {
   width: 100%;
 }
 
+.logoSection {
+  width: 100%;
+  background-color: #FFFFFF;
+  padding: 40px 15px;
+  -webkit-box-shadow: 0px 14px 64px 0px rgba(17, 16, 41, 0.1);
+          box-shadow: 0px 14px 64px 0px rgba(17, 16, 41, 0.1);
+}
+.logoSection__dotBetweenImage {
+  display: none;
+}
+.logoSection__logoBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.logoSection__imageLogo {
+  width: 35%;
+  margin: 15px 0px;
+}
+
 @media only screen and (min-width: 700px) {
   .header {
     padding: 0px 30px;
@@ -155,6 +189,19 @@ h1 {
   .header__image {
     width: 60%;
     display: block;
+  }
+  .logoSection {
+    padding: 40px 30px;
+  }
+  .logoSection__imageLogo {
+    width: 18%;
+  }
+  .logoSection__dotBetweenImage {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #DCDDEB;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -191,9 +238,18 @@ h1 {
   }
   .header__rightSection {
     width: 40%;
-    margin-top: 90px;
+    margin-top: 40px;
   }
   .header__image {
-    width: 80%;
+    width: 90%;
+  }
+  .logoSection__logoBox {
+    width: 90vw;
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+  .logoSection__imageLogo {
+    width: 12%;
   }
 }/*# sourceMappingURL=main.css.map */
