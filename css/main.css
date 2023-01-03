@@ -21,8 +21,15 @@
   src: url("/font/THICCCBOI-Bold.woff2") format("woff2");
   font-family: "Thic Bold";
 }
-h1 {
+.headingOne {
   font-size: 4rem;
+  font-family: "Thic Regular";
+  color: #111029;
+  padding-bottom: 20px;
+}
+
+.headingTwo {
+  font-size: 3.2rem;
   font-family: "Thic Regular";
   color: #111029;
   padding-bottom: 20px;
@@ -33,6 +40,14 @@ h1 {
   line-height: 2.8rem;
   color: #111029;
   font-family: "Thic Regular";
+}
+
+.paragraphStrong {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  color: #111029;
+  font-family: "Thic Bold";
+  margin: 10px 0px;
 }
 
 .blackButton {
@@ -60,8 +75,11 @@ h1 {
 }
 
 @media only screen and (min-width: 700px) {
-  h1 {
+  .headingOne {
     font-size: 6.4rem;
+  }
+  .headingTwo {
+    font-size: 5.4rem;
   }
   .paragraph {
     font-size: 1.9rem;
@@ -74,11 +92,18 @@ h1 {
   }
 }
 @media only screen and (min-width: 992px) {
-  h1 {
+  .headingOne {
     font-size: 8rem;
+  }
+  .headingTwo {
+    font-size: 6rem;
   }
   .paragraph {
     font-size: 2rem;
+  }
+  .paragraphStrong {
+    font-size: 2.6rem;
+    margin: 20px 0px 25px 0px;
   }
   .blackButton {
     font-size: 2rem;
@@ -158,6 +183,13 @@ h1 {
   margin: 15px 0px;
 }
 
+.columnInformationSection {
+  padding: 95px 15px;
+}
+.columnInformationSection__box {
+  margin: 40px 0px;
+}
+
 @media only screen and (min-width: 700px) {
   .header {
     padding: 0px 30px;
@@ -202,6 +234,29 @@ h1 {
     height: 10px;
     border-radius: 50%;
     background-color: #DCDDEB;
+  }
+  .columnInformationSection {
+    padding: 95px 30px;
+  }
+  .columnInformationSection__box {
+    margin: 40px 0px;
+    width: 47%;
+  }
+  .columnInformationSection__columnsBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 40px;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -251,5 +306,40 @@ h1 {
   }
   .logoSection__imageLogo {
     width: 12%;
+  }
+  .columnInformationSection {
+    width: 90vw;
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 200px 30px;
+  }
+  .columnInformationSection__headingTwo {
+    padding-bottom: 0px;
+  }
+  .columnInformationSection__headingBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .columnInformationSection__headingBox--first {
+    width: 55%;
+  }
+  .columnInformationSection__headingBox--second {
+    width: 35%;
+  }
+  .columnInformationSection__box {
+    margin: 40px 0px;
+    width: 30%;
+  }
+  .columnInformationSection__columnsBox {
+    padding-top: 40px;
   }
 }/*# sourceMappingURL=main.css.map */
