@@ -311,6 +311,53 @@
   margin-top: 20px;
 }
 
+.wideoSection {
+  padding: 95px 15px;
+  width: 100vw;
+  background-image: url("/image/backgroundWideoSection.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.wideoSection__headingTwo {
+  text-align: center;
+}
+.wideoSection__boxBlureImage {
+  width: 100%;
+  border-radius: 35px;
+  position: relative;
+  border-radius: 35px;
+  margin: 40px 0px;
+}
+.wideoSection__imageBlure {
+  width: 100%;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  border-radius: 35px;
+}
+.wideoSection__iconPlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 69px;
+  height: 69px;
+}
+.wideoSection__walletImage {
+  position: absolute;
+  left: -30px;
+  width: 150px;
+}
+.wideoSection__tradingImage {
+  position: absolute;
+  right: -15px;
+  width: 140px;
+}
+.wideoSection__buttonBox {
+  margin-top: 40px;
+}
+
 @media only screen and (min-width: 700px) {
   .header {
     padding: 0px 30px;
@@ -418,6 +465,45 @@
     width: 1000px;
     height: 1000px;
   }
+  .wideoSection {
+    padding: 95px 30px;
+  }
+  .wideoSection__boxBlureImage {
+    width: 80%;
+    margin: 40px auto;
+  }
+  .wideoSection__walletImage {
+    position: absolute;
+    left: -100px;
+    width: 250px;
+  }
+  .wideoSection__tradingImage {
+    position: absolute;
+    right: -80px;
+    width: 250px;
+  }
+  .wideoSection__iconPlay {
+    width: 80px;
+    height: 80px;
+  }
+  .wideoSection__buttonBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: cetenr;
+        align-content: cetenr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 60px;
+  }
 }
 @media only screen and (min-width: 992px) {
   .navigationMobile {
@@ -507,11 +593,11 @@
     width: 100%;
   }
   .cryptoWalletInformation__wrapper {
+    width: 90vw;
+    max-width: 1350px;
     padding: 200px 30px;
     padding-top: 0px;
     padding-bottom: 0px;
-    width: 90vw;
-    max-width: 1350px;
     margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -564,5 +650,39 @@
     left: 51vw;
     width: 1000px;
     height: 2000px;
+  }
+  .wideoSection {
+    width: 100%;
+    padding: 0px 30px;
+  }
+  .wideoSection__wrapper {
+    width: 90vw;
+    max-width: 1350px;
+    padding: 200px 30px;
+    margin: 0 auto;
+  }
+  .wideoSection__imageBlure {
+    width: 100%;
+  }
+  .wideoSection__boxBlureImage {
+    width: 85%;
+  }
+  .wideoSection__headingTwo {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .wideoSection__walletImage {
+    position: absolute;
+    left: -200px;
+    width: 450px;
+  }
+  .wideoSection__tradingImage {
+    position: absolute;
+    right: -150px;
+    width: 450px;
+  }
+  .wideoSection__iconPlay {
+    width: 160px;
+    height: 160px;
   }
 }/*# sourceMappingURL=main.css.map */
