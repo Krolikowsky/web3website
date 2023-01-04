@@ -358,6 +358,108 @@
   margin-top: 40px;
 }
 
+.whatPeopleSay {
+  padding: 95px 15px;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 100vw;
+  background-color: #111029;
+}
+.whatPeopleSay__headingTwo {
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.whatPeopleSay__paragraph {
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.whatPeopleSay__buttonBox {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 40px;
+}
+.whatPeopleSay__column {
+  display: none;
+}
+.whatPeopleSay__column--mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-scroll-snap-points-x: repeat(300px);
+  -ms-scroll-snap-type: mandatory;
+      scroll-snap-type: mandatory;
+  padding-left: 15px;
+}
+.whatPeopleSay__paragraphName {
+  font-family: "Thic Medium";
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  margin-top: 5px;
+}
+.whatPeopleSay__paragraphLogin {
+  font-family: "Thic Medium";
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  margin-top: 5px;
+  color: #1C9BF0;
+}
+.whatPeopleSay__twitterBox {
+  background-color: #FFFFFF;
+  border-radius: 35px;
+  padding: 35px 25px;
+  margin-top: 40px;
+}
+.whatPeopleSay__twitterBox--mobile {
+  margin-right: 20px;
+  min-width: 75vw;
+}
+.whatPeopleSay__twitterBox--mobile:last-of-type {
+  margin-right: 15px;
+}
+.whatPeopleSay__twitterBox--top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+.whatPeopleSay__twitterBox--topLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.whatPeopleSay__twitterBox--avatar {
+  width: 62px;
+  height: 62px;
+}
+.whatPeopleSay__twitterBox--twitter {
+  width: 34px;
+  height: 34px;
+  display: none;
+}
+.whatPeopleSay__twitterBox--login {
+  margin-left: 20px;
+}
+
 @media only screen and (min-width: 700px) {
   .header {
     padding: 0px 30px;
