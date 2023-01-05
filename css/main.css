@@ -364,6 +364,13 @@
   padding-right: 0px;
   width: 100vw;
   background-color: #111029;
+  position: relative;
+}
+.whatPeopleSay__topImageGradient {
+  display: none;
+}
+.whatPeopleSay__bottomImageGradient {
+  display: none;
 }
 .whatPeopleSay__headingTwo {
   text-align: center;
@@ -606,6 +613,36 @@
             align-items: center;
     margin-top: 60px;
   }
+  .whatPeopleSay__twitterBox {
+    background-color: #FFFFFF;
+    border-radius: 35px;
+    padding: 35px 25px;
+    margin-top: 40px;
+  }
+  .whatPeopleSay__twitterBox--mobile {
+    margin-right: 20px;
+    min-width: 55vw;
+  }
+  .whatPeopleSay__twitterBox--twitter {
+    display: block;
+  }
+  .whatPeopleSay__buttonBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: cetenr;
+        align-content: cetenr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 @media only screen and (min-width: 992px) {
   .navigationMobile {
@@ -786,5 +823,83 @@
   .wideoSection__iconPlay {
     width: 160px;
     height: 160px;
+  }
+  .whatPeopleSay {
+    width: 100%;
+    position: relative;
+  }
+  .whatPeopleSay__wrapper {
+    padding: 200px 30px;
+  }
+  .whatPeopleSay__topImageGradient {
+    display: block;
+    position: absolute;
+    top: 0;
+  }
+  .whatPeopleSay__bottomImageGradient {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 700px;
+    height: 700px;
+    z-index: 1;
+  }
+  .whatPeopleSay__headingTwo {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .whatPeopleSay__paragraph {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .whatPeopleSay__paragraphName {
+    font-size: 2rem;
+  }
+  .whatPeopleSay__paragraphLogin {
+    font-size: 2rem;
+  }
+  .whatPeopleSay__opinionBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90vw;
+    max-width: 1350px;
+    margin: 60px auto 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+  }
+  .whatPeopleSay__column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 31%;
+  }
+  .whatPeopleSay__column--mobile {
+    display: none;
+  }
+  .whatPeopleSay__bottomShadow {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 16, 41, 0)), color-stop(82%, #111029));
+    background-image: linear-gradient(180deg, rgba(17, 16, 41, 0), #111029 82%);
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    bottom: -1px;
+  }
+  .whatPeopleSay__topShadow {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#111029), to(rgba(17, 16, 41, 0)));
+    background-image: linear-gradient(180deg, #111029, rgba(17, 16, 41, 0));
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 0px;
   }
 }/*# sourceMappingURL=main.css.map */
