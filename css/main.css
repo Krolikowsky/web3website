@@ -467,6 +467,67 @@
   margin-left: 20px;
 }
 
+.easySteps {
+  padding: 95px 15px;
+  width: 100vw;
+  background-image: url("/image/backgroundEasySteps.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.easySteps__headingTwo {
+  text-align: center;
+}
+.easySteps__paragraph {
+  text-align: center;
+}
+.easySteps__paragraphBox {
+  font-family: "Thic Medium";
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.easySteps__rightSide {
+  width: 100%;
+}
+.easySteps__rightSideBox {
+  width: 100%;
+}
+.easySteps__imageWallet {
+  width: 100%;
+}
+.easySteps__icon {
+  margin-right: 20px;
+}
+.easySteps__leftSideBoxs {
+  margin-top: 40px;
+}
+.easySteps__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 18px 32px;
+  border-radius: 35px;
+  -webkit-box-shadow: 0px 2px 6px 0px rgba(20, 20, 43, 0.06);
+          box-shadow: 0px 2px 6px 0px rgba(20, 20, 43, 0.06);
+  border: 1px solid #DCDDEB;
+  margin-top: 20px;
+  background-color: #FFFFFF;
+}
+
 @media only screen and (min-width: 700px) {
   .header {
     padding: 0px 30px;
@@ -613,6 +674,9 @@
             align-items: center;
     margin-top: 60px;
   }
+  .whatPeopleSay__column--mobile {
+    padding-left: 30px;
+  }
   .whatPeopleSay__twitterBox {
     background-color: #FFFFFF;
     border-radius: 35px;
@@ -642,6 +706,43 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .easySteps {
+    padding: 95px 30px;
+  }
+  .easySteps__boxBottomContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 60px;
+  }
+  .easySteps__leftSideBoxs {
+    width: 35%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 0px;
+  }
+  .easySteps__rightSide {
+    width: 55%;
+    background: #FFFFFF;
+    border-radius: 35px;
+    -webkit-box-shadow: 0px 2px 6px 0px rgba(20, 20, 43, 0.06);
+            box-shadow: 0px 2px 6px 0px rgba(20, 20, 43, 0.06);
+    border: 1px solid #DCDDEB;
+  }
+  .easySteps__paragraphBoxInfo {
+    display: none;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -827,6 +928,8 @@
   .whatPeopleSay {
     width: 100%;
     position: relative;
+    padding-bottom: 0px;
+    padding-top: 0px;
   }
   .whatPeopleSay__wrapper {
     padding: 200px 30px;
@@ -901,5 +1004,44 @@
     height: 300px;
     position: absolute;
     top: 0px;
+  }
+  .easySteps {
+    width: 100%;
+    padding: 200px 30px;
+  }
+  .easySteps__headingTwo {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .easySteps__paragraph {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .easySteps__wrapper {
+    width: 90vw;
+    max-width: 1350px;
+    margin: 0 auto;
+  }
+  .easySteps__icon {
+    margin-right: 30px;
+  }
+  .easySteps__leftSideBoxs {
+    width: 45%;
+  }
+  .easySteps__rightSide {
+    width: 45%;
+    padding: 35px 35px 0px 35px;
+  }
+  .easySteps__box {
+    padding: 35px;
+  }
+  .easySteps__box:first-of-type {
+    margin-top: 0px;
+  }
+  .easySteps__paragraphBoxInfo {
+    display: block;
+  }
+  .easySteps__paragraphBox {
+    font-size: 2rem;
   }
 }/*# sourceMappingURL=main.css.map */
