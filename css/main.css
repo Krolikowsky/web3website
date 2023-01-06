@@ -474,6 +474,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
+  padding-bottom: 0px;
 }
 .easySteps__headingTwo {
   text-align: center;
@@ -526,6 +527,28 @@
   border: 1px solid #DCDDEB;
   margin-top: 20px;
   background-color: #FFFFFF;
+}
+
+.featureToday {
+  padding: 95px 15px;
+  width: 100vw;
+  background-image: url("/image/backgroundLastSection.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.featureToday__wrapper {
+  width: 100%;
+}
+.featureToday__headingTwo {
+  color: #FFFFFF;
+  text-align: center;
+}
+.featureToday__paragraph {
+  text-align: center;
+}
+.featureToday__buttonBox {
+  margin-top: 20px;
 }
 
 @media only screen and (min-width: 700px) {
@@ -743,6 +766,27 @@
   }
   .easySteps__paragraphBoxInfo {
     display: none;
+  }
+  .featureToday {
+    padding: 95px 30px;
+  }
+  .featureToday__buttonBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: cetenr;
+        align-content: cetenr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 40px;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -1043,5 +1087,22 @@
   }
   .easySteps__paragraphBox {
     font-size: 2rem;
+  }
+  .featureToday {
+    padding: 200px 30px;
+    width: 100%;
+  }
+  .featureToday__wrapper {
+    width: 90vw;
+    max-width: 1350px;
+    margin: 0 auto;
+  }
+  .featureToday__headingTwo {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .featureToday__paragraph {
+    max-width: 800px;
+    margin: 0 auto;
   }
 }/*# sourceMappingURL=main.css.map */
