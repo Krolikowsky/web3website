@@ -650,6 +650,57 @@
   margin-top: 30px;
 }
 
+.faq {
+  padding: 95px 15px;
+  width: 100%;
+  background-color: #111029;
+  position: relative;
+  overflow: hidden;
+}
+.faq__headingTextTopBox {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.faq__paragraphQuestion {
+  color: #FFFFFF;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  font-family: "Thic Medium";
+  width: 80%;
+}
+.faq__question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.faq__iconArrow {
+  width: 40px;
+  height: 40px;
+}
+.faq__box {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-top: 1px solid hsla(0deg, 0%, 100%, 0.2);
+  z-index: 10;
+}
+.faq__answer {
+  margin-top: 20px;
+}
+.faq__imageBackground {
+  position: absolute;
+}
+.faq__paragraphQuestionSpan {
+  display: none;
+}
+
 @media only screen and (min-width: 700px) {
   .header {
     padding: 0px 30px;
@@ -949,6 +1000,20 @@
   }
   .pricingTable__button {
     width: 100%;
+  }
+  .faq {
+    padding: 95px 30px;
+  }
+  .faq__paragraphQuestion {
+    font-size: 2.5rem;
+  }
+  .faq__paragraphQuestionSpan {
+    font-size: 2.5rem;
+    display: inline-block;
+    margin-right: 30px;
+  }
+  .faq__imageBackground {
+    right: -90px;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -1331,5 +1396,35 @@
   .pricingTable__headingSection {
     max-width: 700px;
     margin: 0 auto;
+  }
+  .faq {
+    padding: 200px 30px;
+  }
+  .faq__headingTextTopBox {
+    margin-bottom: 60px;
+    max-width: 900px;
+    margin: 0 auto 60px;
+  }
+  .faq__wrapper {
+    width: 90vw;
+    max-width: 1350px;
+    margin: 0 auto;
+  }
+  .faq__paragraphQuestion {
+    font-size: 4rem;
+  }
+  .faq__paragraphQuestionSpan {
+    font-size: 4rem;
+    display: inline-block;
+    margin-right: 50px;
+  }
+  .faq__imageBackground {
+    width: 386px;
+    height: 1350px;
+    right: 0;
+  }
+  .faq__iconArrow {
+    width: 60px;
+    height: 60px;
   }
 }/*# sourceMappingURL=main.css.map */
